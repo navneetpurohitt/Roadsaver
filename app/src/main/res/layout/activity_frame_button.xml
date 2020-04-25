@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="horizontal"
+    tools:context=".">
+    <Button
+        android:id="@+id/SwitchLoginButton"
+        android:layout_width="96dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/lightbluebutton"
+        android:text="Login"
+        android:onClick="loadFragmentOne"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/SwitchSignInButton"
+        android:layout_width="96dp"
+        android:layout_height="34dp"
+        android:onClick="loadFragmentTwo"
+        android:background="@drawable/lightbluebutton"
+        android:text="SignUp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintStart_toEndOf="@+id/SwitchLoginButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+    <FrameLayout
+        android:id="@+id/mainFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|top" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

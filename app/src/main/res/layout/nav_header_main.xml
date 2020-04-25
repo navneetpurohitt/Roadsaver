@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:background="#2A2E43"
+    android:paddingLeft="15dp"
+    android:gravity="bottom">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harshit Awasthi"
+        android:textSize="30dp"
+        android:textColor="#FFFF" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="emailid@12.com"
+        android:paddingTop="25dp"
+        android:textSize="15dp"
+        android:paddingBottom="35dp"
+        android:textColor="#8D8686"/>
+</LinearLayout>

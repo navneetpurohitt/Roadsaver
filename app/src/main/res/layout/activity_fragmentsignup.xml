@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="#EEEEEE">
+    <EditText
+        android:id="@+id/ETName"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:hint="Name"
+        android:paddingLeft="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/roundedxml"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/ETEmail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/roundedxml"
+        android:hint="Email"
+        android:paddingLeft="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETName"
+        app:layout_constraintVertical_bias="0.058"
+        tools:layout_editor_absoluteX="35dp" />
+
+    <EditText
+        android:id="@+id/EtNumber"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="35dp"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:hint="Phone no"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/roundedxml"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETEmail"
+        app:layout_constraintVertical_bias="0.072"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/ETPassword"
+        android:paddingLeft="20dp"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+
+        android:background="@drawable/roundedxml"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtNumber"
+        app:layout_constraintVertical_bias="0.092"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@drawable/lightbluebutton"
+        android:text="REGISTER"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETPassword"
+        app:layout_constraintVertical_bias="0.315"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
